@@ -1,0 +1,19 @@
+<h1>
+    {{person.name}}
+</h1>
+<p>
+    {{person.email}}
+</p>
+
+<div *ngFor="let social of person.socialLinks">
+    <p *ngIf="social.link.length > 0">
+        <a href="{{social.link}}" ngClass="{{social.icon}}"> {{social.name}} </a>
+    </p>
+</div>
+
+
+<!--<ul>-->
+<!--<li *ngFor="let social of person.socialLinks" *ngIf="social.link != ''">-->
+<!--<a *ngIf="social.link != ''" href="{{social.link}}"> {{social.name}} </a>-->
+<!--</li>-->
+<!--</ul>-->
