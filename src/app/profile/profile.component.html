@@ -1,9 +1,6 @@
-<h1>
-    {{person.name}}
-</h1>
-<p *ngIf="person.email.length > 0">
-    {{person.email}}
-</p>
+<h1>{{person.name}}</h1>
+
+<p *ngIf="person.email.length > 0">{{person.email}}</p>
 
 <div class="socialLinks">
     <span *ngFor="let social of person.socialLinks">
