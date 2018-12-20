@@ -23,7 +23,8 @@ export class PersonService {
         return [
             {name: 'Github', link: 'https://github.com/richardhughes', icon: 'fab fa-github-square fa-3x'},
             {name: 'LinkedIn', link: 'https://www.linkedin.com/in/richardhughes9/', icon: 'fab fa-linkedin fa-3x'},
-            {name: 'Facebook', link: '', icon: ''}
+            {name: 'Twitter', link: 'https://twitter.com/MrRichieHughes', icon: 'fab fa-twitter-square fa-3x'},
+            {name: 'StackOverflow', link: 'https://stackoverflow.com/users/2915099/richie-hughes',  icon: 'fab fa-stack-overflow fa-3x'}
         ];
     }
 }
