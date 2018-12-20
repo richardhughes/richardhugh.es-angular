@@ -27,11 +27,11 @@ describe('PageNotFoundComponent', () => {
         expect(component).toBeTruthy();
     });
 
-    it('should render Not Found in a h1 tag', () => {
+    it('should render 404 in a h1 tag', () => {
         fixture = TestBed.createComponent(PageNotFoundComponent);
         fixture.detectChanges();
         const compiled = fixture.debugElement.nativeElement;
-        expect(compiled.querySelector('h1').textContent).toContain('Not Found');
+        expect(compiled.querySelector('h1').textContent).toContain('404');
     });
 
     it('should render a message to the user to say go back to the homepage', () => {
