@@ -14,6 +14,7 @@ export class PersonService {
         return {
             name: 'Richard Hughes',
             email: 'iam@richardhugh.es',
+            jobTitle: 'Software Developer',
             socialLinks: this.getSocialLinks()
         };
     }
