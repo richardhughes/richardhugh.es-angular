@@ -20,8 +20,8 @@ export class PersonService {
 
     private getSocialLinks(): Array<SocialLink> {
         return [
-            {name: 'Github', link: 'https://github.com/richardhughes', icon: 'fab fa-github-square fa-3x'},
-            {name: 'LinkedIn', link: 'https://www.linkedin.com/in/richardhughes9/', icon: 'fab fa-linkedin fa-3x'},
+            {name: 'Github', link: 'https://github.com/richardhughes', icon: 'fab fa-github-square fa-2x'},
+            {name: 'LinkedIn', link: 'https://www.linkedin.com/in/richardhughes9/', icon: 'fab fa-linkedin fa-2x'},
             {name: 'Facebook', link: '', icon: ''}
         ];
     }
