@@ -10,6 +10,7 @@ import {HttpClientModule} from '@angular/common/http';
 import { NotForkPipe } from './not-fork.pipe';
 import { GithubSectionComponent } from './github-section/github-section.component';
 import { ProfileSectionComponent } from './profile-section/profile-section.component';
+import {TimeAgoPipe} from 'time-ago-pipe';
 
 @NgModule({
     declarations: [
@@ -19,7 +20,8 @@ import { ProfileSectionComponent } from './profile-section/profile-section.compo
         GithubComponent,
         NotForkPipe,
         GithubSectionComponent,
-        ProfileSectionComponent
+        ProfileSectionComponent,
+        TimeAgoPipe
     ],
     imports: [
         BrowserModule,
