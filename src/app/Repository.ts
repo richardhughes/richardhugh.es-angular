@@ -5,4 +5,5 @@ export class Repository {
     stargazers_count: number;
     watchers_count: number;
     description: string;
+    pushed_at: any;
 }
