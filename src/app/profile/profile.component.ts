@@ -1,6 +1,5 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {Person} from '../Person';
-import {PersonService} from '../person.service';
 
 @Component({
     selector: 'app-profile',
@@ -8,16 +7,12 @@ import {PersonService} from '../person.service';
     styleUrls: ['./profile.component.sass']
 })
 export class ProfileComponent implements OnInit {
+    @Input() person: Person;
 
-    public person: Person;
-
-    constructor(
-        private personService: PersonService
-    ) {
+    constructor() {
     }
 
     ngOnInit() {
-        this.person = this.personService.getPerson();
     }
 
 }

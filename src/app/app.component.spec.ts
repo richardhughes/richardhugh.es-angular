@@ -1,7 +1,7 @@
 import {TestBed, async} from '@angular/core/testing';
 import {RouterTestingModule} from '@angular/router/testing';
 import {AppComponent} from './app.component';
-import {ProfileComponent} from './profile/profile.component';
+import {GithubComponent} from './github/github.component';
 
 describe('AppComponent', () => {
     beforeEach(async(() => {
@@ -11,7 +11,7 @@ describe('AppComponent', () => {
             ],
             declarations: [
                 AppComponent,
-                ProfileComponent
+                GithubComponent
             ],
         }).compileComponents();
     }));

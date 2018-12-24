@@ -8,6 +8,8 @@ import {PageNotFoundComponent} from './page-not-found/page-not-found.component';
 import {GithubComponent} from './github/github.component';
 import {HttpClientModule} from '@angular/common/http';
 import { NotForkPipe } from './not-fork.pipe';
+import { GithubSectionComponent } from './github-section/github-section.component';
+import { ProfileSectionComponent } from './profile-section/profile-section.component';
 
 @NgModule({
     declarations: [
@@ -15,7 +17,9 @@ import { NotForkPipe } from './not-fork.pipe';
         ProfileComponent,
         PageNotFoundComponent,
         GithubComponent,
-        NotForkPipe
+        NotForkPipe,
+        GithubSectionComponent,
+        ProfileSectionComponent
     ],
     imports: [
         BrowserModule,

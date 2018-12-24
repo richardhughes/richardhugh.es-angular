@@ -1,11 +1,13 @@
-<h1>{{person.name}}</h1>
-<p>{{person.jobTitle}}</p>
-<p *ngIf="person.email.length > 0">{{person.email}}</p>
+<div class="col-lg-12 card shadow p-4 mb-4 bg-white text-center">
+    <h1>{{person.name}}</h1>
+    <p>{{person.jobTitle}}</p>
+    <p *ngIf="person.email.length > 0">{{person.email}}</p>
 
-<div class="socialLinks">
+    <div class="socialLinks">
     <span *ngFor="let social of person.socialLinks">
         <span *ngIf="social.link.length > 0">
             <a href="{{social.link}}"><i ngClass="{{social.icon}}"></i></a>
         </span>
     </span>
+    </div>
 </div>

@@ -1,7 +1,5 @@
-import {Component, OnInit} from '@angular/core';
-import {GithubService} from '../github.service';
+import {Component, Input, OnInit} from '@angular/core';
 import {Repository} from '../Repository';
-import {Router} from '@angular/router';
 
 @Component({
     selector: 'app-github',
@@ -10,13 +8,12 @@ import {Router} from '@angular/router';
 })
 export class GithubComponent implements OnInit {
 
-    public repositories;
+    @Input() repository: Repository;
 
-    constructor(private githubService: GithubService, private router: Router) {
+    constructor() {
     }
 
     ngOnInit() {
-        this.githubService.getAllRepositories().subscribe((data: Array<Repository>) => this.repositories = data);
     }
 
     goToGithub(repository: Repository) {

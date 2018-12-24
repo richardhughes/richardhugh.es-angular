@@ -1,19 +1,15 @@
-<div class="row d-flex justify-content-around ">
-
-    <div *ngFor="let repository of ((repositories | notFork) | slice : 0:4)"
-         class="card shadow bg-white text-center">
-        <h5 class="card-header">{{repository.name}}</h5>
-        <div class="card-body">
-            <!--<p class="card-text">{{repository.description}}</p>-->
-            <button href="#" class="btn btn-secondary" (click)="goToGithub(repository)"><i class="fab fa-github"></i>
-                View on Github
+<div class="card shadow bg-white text-center">
+    <h5 class="card-title mt-3">{{repository.name}}</h5>
+    <div class="card-body">
+        <p class="card-text">{{repository.description}}</p>
+        <p class="mt-2">
+            <button (click)="goToGithub(repository)" class="badge badge-dark p-2 mr-2">
+                <i class="fab fa-github"></i> View
             </button>
-            <p class="mt-2">
-                <span class="badge badge-primary p-2 mr-2"><i
-                        class="far fa-eye"></i> {{repository.watchers_count}}</span>
-                <span class="badge badge-success p-2 mr-2"><i
-                        class="fas fa-star"></i> {{repository.stargazers_count}}</span>
-            </p>
-        </div>
+            <span class="badge badge-primary p-2 mr-2"><i
+                    class="far fa-eye"></i> {{repository.watchers_count}}</span>
+            <span class="badge badge-success p-2 mr-2"><i
+                    class="fas fa-star"></i> {{repository.stargazers_count}}</span>
+        </p>
     </div>
 </div>
