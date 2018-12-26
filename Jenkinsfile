@@ -1,10 +1,23 @@
 pipeline {
-  agent any
+  agent {
+    node {
+      label 'nodetest'
+    }
+
+  }
   stages {
     stage('Test') {
-      steps {
-        sh '''npm install
-ng test --watch=false --browsers=ChromeHeadless'''
+      parallel {
+        stage('Build Dependencies') {
+          steps {
+            sh 'npm install'
+          }
+        }
+        stage('Run Tests') {
+          steps {
+            sh 'ng test --watch=false --browsers=ChromeHeadless'
+          }
+        }
       }
     }
   }
