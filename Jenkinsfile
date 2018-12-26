@@ -2,6 +2,12 @@ pipeline {
   agent any
   stages {
     stage('Build Dependencies') {
+      agent {
+        node {
+          label 'NodeJS 10.0'
+        }
+
+      }
       steps {
         sh 'npm install'
       }
