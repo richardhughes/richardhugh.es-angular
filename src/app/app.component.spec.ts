@@ -2,6 +2,7 @@ import {TestBed, async} from '@angular/core/testing';
 import {RouterTestingModule} from '@angular/router/testing';
 import {AppComponent} from './app.component';
 import {GithubComponent} from './github/github.component';
+import {TimeAgoPipe} from 'time-ago-pipe';
 
 describe('AppComponent', () => {
     beforeEach(async(() => {
@@ -11,7 +12,8 @@ describe('AppComponent', () => {
             ],
             declarations: [
                 AppComponent,
-                GithubComponent
+                GithubComponent,
+                TimeAgoPipe
             ],
         }).compileComponents();
     }));
