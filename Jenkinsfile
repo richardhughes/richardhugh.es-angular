@@ -8,7 +8,7 @@ pipeline {
     }
     stage('Test') {
       steps {
-        sh 'ng test --watch=false --browsers=ChromeHeadless'
+        sh 'CHROME_BIN=/usr/bin/chromium-browser ng test --watch=false --browsers=ChromeHeadless'
       }
     }
   }
